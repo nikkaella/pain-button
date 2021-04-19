@@ -18,7 +18,8 @@ const uri = process.env.ATLAS_URI;
 
 mongoose.connect(uri, {
     useNewUrlParser: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
+    useCreateIndex: true
 });
 
 const connection = mongoose.connection;
